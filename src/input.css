@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to right, #f9f8f7, #e6c4a8);
+  width: 100%;
+  height: 100vh;
+}
+section {
+  margin: 6% 8%;
+}
+.border-clase {
+  border-bottom: 3px solid #c5a890;
+  border-radius: 5px;
+}
