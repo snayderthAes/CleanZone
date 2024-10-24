@@ -919,8 +919,8 @@ nav ul li a {
     text-align: center;
   }
 
-  .max-sm\:text-\[18px\] {
-    font-size: 18px;
+  .max-sm\:text-\[17px\] {
+    font-size: 17px;
   }
 
   .max-sm\:text-\[19px\] {
@@ -929,5 +929,13 @@ nav ul li a {
 
   .max-sm\:text-\[23px\] {
     font-size: 23px;
+  }
+
+  .max-sm\:text-\[5rem\] {
+    font-size: 5rem;
+  }
+
+  .max-sm\:text-\[4\.5rem\] {
+    font-size: 4.5rem;
   }
 }
