@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         tPrincipal: ["Open Sans", "sans-serif"],
+        tSecund: ["DynaPuff", "sans-serif"],
       },
     },
   },

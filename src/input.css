@@ -3,14 +3,24 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(to right, #f9f8f7, #e6c4a8);
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   width: 100%;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 section {
-  margin: 6% 8%;
+  margin: 13% 10%;
 }
-.border-clase {
-  border-bottom: 3px solid #c5a890;
-  border-radius: 5px;
+nav ul {
+  display: inline-flex;
+}
+nav ul {
+  gap: 25px;
+}
+nav ul li a {
+  @apply font-tPrincipal
+  font-medium
+  text-[15px]
+  text-[#242424];
 }

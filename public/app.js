@@ -1,3 +1,4 @@
 function miBoton() {
-  alert("no disponible temporalmente...");
+  alert(`HECHO POR SNAYDERTH CON 𖹭
+PRONTO DISPONIBLE.`);
 }

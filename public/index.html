@@ -3,284 +3,268 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CleanZone | 2025</title>
+    <title>Ecolimp - Brillando con limpieza ecológica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
     <script
       src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"
       defer
     ></script>
-    <link rel="shortcut icon" href="./img/heart.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logo-white.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header
-      class="flex items-center justify-between py-[10px] px-[15px] border-[2px] border-solid border-[#5b5a5a27] m-6 rounded-lg shadow-md max-sm:flex"
-    >
-      <a
-        href="#"
-        class="text-[25px] font-tPrincipal font-bold text-[#c8a990] border-clase max-sm:text-[25px]"
-        >CleanZone</a
-      >
+    
+    <!--HEADER-->
+
+    <header class="fixed top-0 left-0 flex justify-between items-center px-5 py-3 w-full shadow-md z-10 bg-[#f1f5ff]">
+
+      <a href="#">
+        <img src="./img/logo.svg" alt="logo-website" class="w-[70px]">
+      </a>
 
       <nav class="max-sm:hidden">
-        <ul class="inline-flex gap-9">
-          <li><a href="#" class="text-[#5b5a5a] font-medium">Inicio</a></li>
-          <li><a href="#" class="text-[#5b5a5a] font-medium">Empleos</a></li>
-          <li><a href="#" class="text-[#5b5a5a] font-medium">Ayuda</a></li>
-          <li><a href="#" class="text-[#5b5a5a] font-medium">Servicios</a></li>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#servicio">Servicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#sostenibilidad">Sostenibilidad</a></li>
+          <li><a href="#empleos">Empleos</a></li>
         </ul>
       </nav>
 
-      <div class="inline-flex">
-        <div class="flex">
-          <box-icon name="user-circle" type="solid" color="#5b5a5a"></box-icon>
-          <a href="#" class="ml-1 text-[#5b5a5a] font-medium">Log In</a>
+      <div class="flex gap-4">
+        <div>
+          <a href="#"><p class="font-tPrincipal text-[15px] text-[#242424] font-medium border-2 border-[#00000018] py-2 px-4 rounded-lg active:border-[#68768d] transition-all duration-100" onclick="miBoton()">Login</p></a>
+        </div>
+
+        <div>
+          <a href="#"><p class="font-tPrincipal text-[15px] text-[#242424] font-medium border-2 border-[#00000018] py-2 px-4 rounded-lg active:border-[#68768d] transition-all duration-100" onclick="miBoton()">Register</p></a>
         </div>
       </div>
+
     </header>
-
-    <!--Home Section CleanZone-->
-
-    <section>
-      <div class="flex items-center max-sm:block">
-        <div class="w-full max-sm:text-center">
-          <h1 class="text-[#998576] font-bold font-tPrincipal text-[4rem] max-sm:text-[2.8rem]">
-            CLEANZONE
-          </h1>
-          <h4
-            class="tracking-[7px] text-[#545454] font-tPrincipal font-bold text-[16px]"
-          >
-            Trabaja con Nosotros
-          </h4>
-
-          <p
-            class="mt-10 mb-10 font-medium font-tPrincipal text-[#545454] text-[17px] leading-[30px]"
-          >
-            Es una empresa líder en el sector de la limpieza y mantenimiento,
-            conocida por su compromiso con la calidad y la sostenibilidad.
-            Actualmente, buscamos personas motivadas y con pasión por el
-            servicio al cliente para unirse a nuestro equipo.
-          </p>
-
-          <div class="inline-flex gap-8 max-sm:mt-[20px] mb-[20px]">
-            <a
-              href="#"
-              class="border-2 border-solid border-[#545454] py-3 px-6 rounded-lg text-[#545454] font-bold hover:shadow-xl transition-all duration-500 ease-out active:scale-[1.1]" onclick="miBoton()"
-              >Información...</a
-            >
-            <a
-              href="#"
-              class="border-2 border-solid border-[#545454] py-3 px-6 rounded-lg text-[#fff] font-bold bg-[#998576] hover:shadow-xl transition-all duration-500 ease-out active:scale-[1.1]" onclick="miBoton()"
-              >Trabaja Ya!</a
-            >
-          </div>
-        </div>
-
-        <div class="w-full h-full relative">
-          <img
-            src="./img/cleaning.png"
-            alt="cleaning-image"
-            class="w-full h-full"
-          />
-          <img
-            src="./img/banner2.png"
-            alt="cleaning-2"
-            class="absolute top-0 right-0 w-[54%]"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!--SECTION EMPLEOS 3-->
     <main>
-      <section>
-        <h1 class="text-center font-tPrincipal font-bold text-[3rem] text-[#998576]">EMPLEOS</h1>
-        <h5 class="text-center font-tPrincipal font-semibold text-[1.2rem] text-[#545454] tracking-[7px]">La Mejor Empresa De Empleos 2025</h5>
+    <!--HOME SECTION ECOLIMP-->
 
-        <div class="flex gap-20 justify-between items-center mt-[10rem] max-sm:block max-sm:text-center">
-          <div class="w-full h-full">
-            <img src="./img/shopping.png" alt="shopping-image" class="w-full h-full">
-          </div>
+      <section class="flex justify-between gap-20 items-center max-sm:mt-[120px] max-sm:flex-col">
 
-          <div class="w-full">
-            <h1 class="font-tPrincipal font-bold text-[1.5rem] text-[#545454] mb-4">CLEANZONE TE OFRECE UN EMPLEO UNICO</h1>
-            <p class="mt-10 mb-10 font-medium font-tPrincipal text-[#545454] text-[17px] leading-[30px]">Si estás interesado en trabajar en CleanZone, puedes enviar tu currículum y pasar a formar parte de su base de datos. La empresa busca ampliar su equipo constantemente y valora la experiencia previa en el sector de limpieza.
-            </p>
-            <a
-            href="#"
-            class="border-2 border-solid border-[#545454] py-3 px-6 rounded-lg text-[#545454] font-bold hover:shadow-xl transition-all duration-500 ease-out active:scale-[1.1]" onclick="miBoton()"
-            >Información...</a
-            >          
+        <div class="max-sm:text-center">
+          <h1 class="font-tSecund font-bold text-[6rem] text-[#90a2c0] mb-3">ECOLIMP</h1>
+          <h5 class="font-tPrincipal font-semibold text-[14px] tracking-[11px] mb-5 text-[#3d4c64]">LIMPIEZA | 2025</h5>
+          <p class="font-tPrincipal text-[16px] font-medium leading-7 text-[#3d4c64] max-sm:text-[19px]">Bienvenido a Ecolimp, tu socio confiable en la contratación<br>
+          de personal de limpieza. Ofrecemos profesionales capacitados para mantener tus espacios impecables, garantizando una limpieza<br>eficiente y responsable.</p>
+
+          <div class="inline-flex gap-5 mt-10">
+            <div>
+              <button class="font-tPrincipal text-[15px] text-[#242424] font-medium border-2 border-[#00000018] py-2 px-4 rounded-lg active:border-[#68768d] transition-all duration-100 max-sm:text-[19px]" onclick="miBoton()">Información</button>
+            </div>
+
+            <div>
+              <button class="font-tPrincipal text-[15px] text-[#fff] bg-[#3d4c64] font-medium border-2 border-[#00000018] py-2 px-4 rounded-lg active:border-[#7b8ca8] transition-all duration-100 max-sm:text-[19px]" onclick="miBoton()">Postularse</button>
+            </div>
           </div>
         </div>
-      </section>
 
-      <!--SECTION #2-->
-
-      <section>
-        <div class="flex gap-20 justify-between items-center mt-[10rem] flex-row-reverse max-sm:block max-sm:text-center">
-          <div class="w-full h-full">
-            <img src="./img/user.png" alt="shopping-image" class="w-full h-full">
-          </div>
-
-          <div class="w-full">
-            <h1 class="font-tPrincipal font-bold text-[1.5rem] text-[#545454] mb-4">LA EMPRESA MAS GRANDE DE LATAM</h1>
-            <p class="mt-10 mb-10 font-medium font-tPrincipal text-[#545454] text-[17px] leading-[30px]">CleanZone se destaca como una de las principales empresas de limpieza en América Latina, siendo reconocida entre las más grandes y exitosas de la región. La compañía ha logrado consolidarse en el mercado gracias a su enfoque en la calidad del servicio, la adopción de tecnología avanzada, y el compromiso con la sostenibilidad. 
-            </p>
-            <a
-              href="#"
-              class="border-2 border-solid border-[#545454] py-3 px-6 rounded-lg text-[#fff] font-bold bg-[#998576] hover:shadow-xl transition-all duration-500 ease-out active:scale-[1.1]" onclick="miBoton()"
-              >Trabaja Ya!</a>
-                  
-          </div>
-        </div>
-      </section>
-
-      <!--SECTION 4 PARTY AND MORE-->
-
-      <section>
-
-        <div class="grid grid-cols-3 gap-10 max-sm:grid max-sm:grid-cols-1 max-sm:gap-[50px] max-sm:mt-[70px] max-sm:mb-[70px]">
-          <div class="border-2 border-solid border-[#5b5a5a27] rounded-xl p-[15px] shadow-xl cursor-pointer hover:scale-[1.1] transition-all duration-200 ease-in">
-            <h1 class="text-center font-tPrincipal font-semibold text-[1.1rem] text-[#545454]">USUARIO</h1>
-
-            <div class="flex justify-center">
-              <img src="./img/user-1.png" alt="usuario-uno" class="w-[50%] h-full">
-            </div>
-
-            <p class="font-tPrincipal text-center text-[#545454] text-[15px] font-semibold max-sm:text-[17px]">Nuestros usuarios son potecialmente respetados, no se aceptan insultos.<br>
-              Cualquier persona que insulte a otra sera despedida de inmediato.
-            </p>
-
-          </div>
-
-          <div class="border-2 border-solid border-[#5b5a5a27] rounded-xl p-[15px] shadow-xl cursor-pointer hover:scale-[1.1] transition-all duration-200 ease-in">
-            <h1 class="text-center font-tPrincipal font-semibold text-[1.1rem] text-[#545454]">FAMILIA</h1>
-
-            <div class="flex justify-center">
-              <img src="./img/family.png" alt="usuario-uno" class="w-[50%] h-full">
-            </div>
-
-            <p class="font-tPrincipal text-center text-[#545454] text-[15px] font-semibold max-sm:text-[17px]">Descansaras los fines de semana<br>
-            con el fin de que pases un poco de tiempo libre con tus amigos y seres queridos.</p>
-
-          </div>
-
-          <div class="border-2 border-solid border-[#5b5a5a27] rounded-xl p-[15px] shadow-xl cursor-pointer hover:scale-[1.1] transition-all duration-200 ease-in">
-            <h1 class="text-center font-tPrincipal font-semibold text-[1.1rem] text-[#545454]">PARTY</h1>
-            <div class="flex justify-center">
-              <img src="./img/party.png" alt="usuario-uno" class="w-[50%] h-full">
-            </div>
-
-            <p class="font-tPrincipal text-center text-[#545454] text-[15px] font-semibold max-sm:text-[17px]">Tenemos fiestas cada 2 meses en la empresa<br>
-            con el fin de que pases un rato agradable con tus amigos o amigas...</p>
-
-          </div>
+        <div class="relative">
+          <img src="./img/home-img.svg" alt="cleaning-home" class="w-full h-auto">
         </div>
 
       </section>
 
-      <!--SECTION 5 USUARIO OPINION-->
+      <!--SERVICIOS SECTION-->
+
+      <section id="servicio">
+        <h1 class="font-tSecund font-semibold text-[20px] tracking-[7px] text-[#3d4c64] text-center mb-5">NUESTROS SERVICIOS</h1>
+        <h5 class="font-tPrincipal font-semibold text-[17px] tracking-[7px] text-[#3d4c64] text-center">ECOLIMP TE OFRECE LOS MEJORES SERVICIOS</h5>
+
+        <div class="grid-cols-2 grid items-center mt-[80px] gap-10 max-sm:grid-cols-1">
+          <div>
+            <img src="./img/services-img.svg" alt="services-img" class="w-full h-auto">
+          </div>
+
+          <div>
+            <h1 class="text-[2rem] font-tSecund font-semibold text-[#3d4c64] mb-[30px]">LIMPIEZA RESIDENCIAL</h1>
+            <p class="font-tPrincipal text-[16px] text-[#3d4c64] font-medium max-sm:text-[18px]">Garantizamos un ambiente laboral limpio y ordenado, adaptado a las necesidades de tu empresa.<br>Nuestro equipo está preparado para cubrir todo tipo de locales comerciales. Somos la mejor empresa de limpieza que se encarga<br>de dejar cualquier lugar impecable y listo para usar.</p>
+
+            <div class="inline-flex gap-5 mt-10">
+              <div>
+                <button class="font-tPrincipal text-[15px] text-[#242424] font-medium border-2 border-[#00000018] py-2 px-4 rounded-lg active:border-[#68768d] transition-all duration-100 max-sm:text-[19px]" onclick="miBoton()">Información</button>
+              </div>
+    
+              <div>
+                <button class="font-tPrincipal text-[15px] text-[#fff] bg-[#3d4c64] font-medium border-2 border-[#00000018] py-2 px-4 rounded-lg active:border-[#7b8ca8] transition-all duration-100 max-sm:text-[19px]" onclick="miBoton()">Postularse</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--SECTION ABOUT-->
+
+      <section id="nosotros">
+        <div class="grid-cols-2 grid items-center mt-[80px] gap-10 max-sm:grid-cols-1 max-sm:mb-20">
+          <div>
+            <h1 class="text-[2rem] font-tSecund font-semibold text-[#3d4c64] mb-[30px] max-sm:mt-10">NOSOTROS SOMOS...</h1>
+            <p class="font-tPrincipal text-[16px] text-[#3d4c64] font-medium max-sm:text-[18px]">Proporcionar soluciones de limpieza efectivas y sostenibles, conectando a profesionales comprometidos con las necesidades de nuestros clientes. En Ecolimp, somos una empresa dedicada a la contratación de personal de limpieza altamente capacitado.</p>
+
+            <div class="inline-flex gap-5 mt-10">
+              <div>
+                <button class="font-tPrincipal text-[15px] text-[#242424] font-medium border-2 border-[#00000018] py-2 px-4 rounded-lg active:border-[#68768d] transition-all duration-100 max-sm:text-[19px]" onclick="miBoton()">Información</button>
+              </div>
+    
+              <div>
+                <button class="font-tPrincipal text-[15px] text-[#fff] bg-[#3d4c64] font-medium border-2 border-[#00000018] py-2 px-4 rounded-lg active:border-[#7b8ca8] transition-all duration-100 max-sm:text-[19px]" onclick="miBoton()">Postularse</button>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="./img/about-img.svg" alt="about-img" class="w-full h-auto">
+          </div>
+        </div>
+      </section>
+
+      <!--SECTION CONTACT-->
+
+      <section id="contacto">
+
+        <h1 class="font-tSecund font-semibold text-[20px] tracking-[7px] text-[#3d4c64] text-center mb-5">CONTACTANOS</h1>
+        <h5 class="font-tPrincipal font-semibold text-[17px] tracking-[7px] text-[#3d4c64] text-center mb-[80px]">NUESTRAS REDES SOCIALES</h5>
+
+        <div class="grid-cols-2 grid items-center gap-10 max-sm:grid-cols-1">
+          <div>
+            <img src="./img/contact.svg" alt="contact" class="w-full h-auto">
+          </div>
+
+          <div class="text-center">
+            <h1 class="font-tPrincipal font-bold text-[18px] text-[#3d4c64] mt-[40px] mb-[20px] max-sm:text-[23px]">PUEDES CONTACTARNOS POR ESTOS MEDIOS</h1>
+
+            <ul>
+              <li><a href="#" class=" max-sm:text-[19px] font-tPrincipal font-semibold text-[15px] text-[#3d4c64]">Direccion: 220 West Station Apt. 056</a></li>
+              <li><a href="#" class=" max-sm:text-[19px] font-tPrincipal font-semibold text-[15px] text-[#3d4c64]">Ciudad: Bogotá D.C</a></li>
+              <li><a href="#" class=" max-sm:text-[19px] font-tPrincipal font-semibold text-[15px] text-[#3d4c64]">Codigo Postal: 20832</a></li>
+              <li><a href="#" class=" max-sm:text-[19px] font-tPrincipal font-semibold text-[15px] text-[#3d4c64]">Celular: 854-863-0203</a></li>
+              <li><a href="#" class=" max-sm:text-[19px] font-tPrincipal font-semibold text-[15px] text-[#3d4c64]">Salario: 1.800.000$</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <!--SOSTENIBILIDAD SECTION-->
+
+      <section id="sostenibilidad">
+
+        <h1 class="text-[2rem] font-tSecund font-semibold text-[#3d4c64] text-center">SOSTENIBILIDAD</h1>
+        <h5 class="text-[1rem] font-tPrincipal font-semibold text-[#3d4c64] mb-[30px] text-center">2025</h5>
+
+        <div class="flex justify-between items-center gap-10 max-sm:flex-col">
+          <div>
+            <div>
+              <img src="./img/row-1.svg" alt="row-1" class="w-full">
+            </div>
+
+            <div class="border-2 border-[#3d4c643b] px-3 py-4 rounded-xl mt-6 shadow-2xl">
+              <p class="font-tPrincipal text-[15px] text-[#3d4c64] font-medium text-center max-sm:text-[19px]">Puedes descargar nuestra app desde la PlayStore o AppStore para tener mas Información.</p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img src="./img/row-2.svg" alt="row-1" class="w-full">
+            </div>
+
+            <div class="border-2 border-[#3d4c643b] px-3 py-4 rounded-xl mt-6 shadow-2xl">
+              <p class="font-tPrincipal text-[15px] text-[#3d4c64] font-medium text-center max-sm:text-[19px]">Somos la empresa mas grande de LatinoAmerica con varias sedes en varios paises de LATAM.</p>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <img src="./img/row-3.svg" alt="row-1" class="w-full">
+            </div>
+
+            <div class="border-2 border-[#3d4c643b] px-3 py-4 rounded-xl mt-6 shadow-2xl">
+              <p class="font-tPrincipal text-[15px] text-[#3d4c64] font-medium text-center max-sm:text-[19px]">Nuestra empresa se encarga tambien de cuidar nuestro planeta y todos nuestros productos son 100% reciclados.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!--EMPLEOS-->
 
       <section>
 
-        <h1 class="text-[#545454] font-tPrincipal font-bold text-[1.7rem] text-center mb-[50px]">OPINIONES DE NUESTROS TRABAJADORES</h1>
-        <div class="grid grid-cols-3 gap-10 max-sm:grid-cols-1 max-sm:gap-[30px]">
-          <div class="border-2 border-solid border-[#5b5a5a27] rounded-xl p-[15px] shadow-xl cursor-pointer hover:scale-[1.1] transition-all duration-200 ease-in">
-            <div class="text-center">
-              <div class="flex justify-center mb-[15px]">
-                <img src="./img/icon-1.jpg" alt="usuario-1" class="w-[20%] h-full rounded-full">
-              </div>
+        <h1 class="text-[2rem] font-tSecund font-semibold text-[#3d4c64] text-center">EMPLEOS</h1>
 
-              <div>
-                <h5 class="text-[#545454] font-tPrincipal font-bold text-[1.1rem]">Ana Caicedo</h5>
-              </div>
-            </div>
-
-            <div class="mt-[30px] mb-[30px]">
-              <p class="font-semibold text-[#545454] font-tPrincipal text-[14px] max-sm:text-[17px]">CleanZone es una de las empresas de limpieza más grandes de América Latina. Destaca por su innovación, calidad en el servicio y sostenibilidad, consolidándose como líder en el sector.</p>
-            </div>
-
-            <div class="flex justify-center">
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-            </div>
+        <div class="flex justify-between items-center gap-10 max-sm:flex-col max-sm:mb-[200px]">
+          <div class="border-2 border-[#3d4c643b] px-3 py-4 rounded-xl mt-6 shadow-lg">
+            <p class="font-tPrincipal text-[15px] text-[#3d4c64] max-sm:text-[19px]"><span class="font-bold">Personal de Limpieza Residencial:</span> Encargados de mantener hogares impecables, realizando tareas de limpieza general y profunda.</p>
           </div>
 
-          <div class="border-2 border-solid border-[#5b5a5a27] rounded-xl p-[15px] shadow-xl cursor-pointer hover:scale-[1.1] transition-all duration-200 ease-in">
-            <div class="text-center">
-              <div class="flex justify-center mb-[15px]">
-                <img src="./img/icon-2.jpg" alt="usuario-2" class="w-[20%] h-full rounded-full">
-              </div>
-
-              <div>
-                <h5 class="text-[#545454] font-tPrincipal font-bold text-[1.1rem]">Andrea Tovar</h5>
-              </div>
-            </div>
-
-            <div class="mt-[30px] mb-[30px]">
-              <p class="font-semibold text-[#545454] font-tPrincipal text-[14px] max-sm:text-[17px]">Ofrecen servicios de alta calidad y son líderes en el sector, recomiendo esta empresa a todas las personas que esten buscando un empleo super bueno.</p>
-            </div>
-
-            <div class="flex justify-center">
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-            </div>
+          <div class="border-2 border-[#3d4c643b] px-3 py-4 rounded-xl mt-6 shadow-lg">
+            <p class="font-tPrincipal text-[15px] text-[#3d4c64] max-sm:text-[19px]"><span class="font-bold">Personal de Limpieza Comercial:</span> Responsables de limpiar y desinfectar oficinas y espacios comerciales, garantizando un ambiente de trabajo saludable.</p>
           </div>
 
-          <div class="border-2 border-solid border-[#5b5a5a27] rounded-xl p-[15px] shadow-xl cursor-pointer hover:scale-[1.1] transition-all duration-200 ease-in">
-            <div class="text-center">
-              <div class="flex justify-center mb-[15px]">
-                <img src="./img/icon-3.jpg" alt="usuario-3" class="w-[20%] h-full rounded-full">
-              </div>
-
-              <div>
-                <h5 class="text-[#545454] font-tPrincipal font-bold text-[1.1rem]">Aurora Valentin</h5>
-              </div>
-            </div>
-
-            <div class="mt-[30px] mb-[30px]">
-              <p class="font-semibold text-[#545454] font-tPrincipal text-[14px] max-sm:text-[17px]">Es la mejor empresa en la que he trabajado todos te tratan super bien y ninguna persona te insulta tal como lo describe.</p>
-            </div>
-
-            <div class="flex justify-center">
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-              <box-icon type='solid' name='star' color="#e39c0f"></box-icon>
-            </div>
+          <div class="border-2 border-[#3d4c643b] px-3 py-4 rounded-xl mt-6 shadow-lg">
+            <p class="font-tPrincipal text-[15px] text-[#3d4c64] max-sm:text-[19px]"><span class="font-bold">Supervisores de Limpieza:</span> Líderes que coordinan y supervisan a los equipos de limpieza, asegurando que se cumplan los estándares de calidad.</p>
           </div>
         </div>
 
       </section>
     </main>
+    <!--FOOTER-->
 
-    <footer>
+    <footer class="px-[30px]">
 
-      <h1 class="text-center font-tPrincipal text-[#545454] text-[1.4rem] font-bold mb-[30px]">CLEANZONE</h1>
+      <div class="grid-cols-4 grid gap-10 max-sm:text-center max-sm:grid-cols-1">
+        <div>
+          <h5 class="text-[17px] text-[#3d4c64] font-tPrincipal font-bold mb-5">COMPAÑIA</h5>
+          <p class="text-[14px] text-[#3d4c64] font-tPrincipal">Ecolimp es una empresa dedicada a la contratación de personal de limpieza altamente calificado, comprometida con ofrecer servicios excepcionales y sostenibles. Nos enfocamos en la limpieza residencial y comercial.</p>
+        </div>
 
-      <div class="flex justify-center gap-5">
-        <box-icon type='logo' name='facebook-circle' color="#545454"></box-icon>
-        <box-icon type='logo' name='instagram-alt' color="#545454"></box-icon>
-        <box-icon type='logo' name='twitter' color="#545454"></box-icon>
-        <box-icon name='pinterest' type='logo' color="#545454"></box-icon>
-        <box-icon type='logo' name='gmail' color="#545454"></box-icon>
-        <box-icon name='youtube' type='logo' color="#545454" ></box-icon>
+        <div>
+          <h5 class="text-[17px] text-[#3d4c64] font-tPrincipal font-bold mb-5">Products</h5>
+          <ul>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Inicio</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Servicios</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Nosotros</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Empleos</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-[17px] text-[#3d4c64] font-tPrincipal font-bold mb-5">LINKS</h5>
+          <ul>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Mi Cuenta</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Afiliacion</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Ayuda</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Apps</li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-[17px] text-[#3d4c64] font-tPrincipal font-bold mb-5">Contacto</h5>
+          <ul>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">220 West Station Apt. 056</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">Bogotá D.C</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">20832</li>
+            <li class="text-[14px] text-[#3d4c64] font-tPrincipal">854-863-0203</li>
+          </ul>
+        </div>
       </div>
 
-      <p class="font-tPrincipal text-center font-semibold text-[13px] mt-[10px]">@2025 Copyright. Todos Los Derechos Reservados.</p>
+      <div class="text-center mt-10 text-[14px] text-[#3d4c64] font-tPrincipal">
+        <p>&copy; 2025 Ecolimp. Todos los derechos reservados</p>
+        <p><a href="#politica-privacidad">Política de Privacidad</a> | <a href="#terminos-servicio">Términos de Servicio</a></p></p>
+        <p>HECHO CON 💗 POR SNAYDERTH</p>
+      </div>
 
     </footer>
 
