@@ -626,6 +626,10 @@ video {
   height: auto;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-\[70px\] {
   width: 70px;
 }
@@ -694,6 +698,11 @@ video {
 .bg-\[\#f1f5ff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 255 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .px-3 {
@@ -777,6 +786,10 @@ video {
 
 .text-\[6rem\] {
   font-size: 6rem;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
 }
 
 .font-bold {
@@ -929,10 +942,6 @@ nav ul li a {
 
   .max-sm\:text-\[23px\] {
     font-size: 23px;
-  }
-
-  .max-sm\:text-\[5rem\] {
-    font-size: 5rem;
   }
 
   .max-sm\:text-\[4\.5rem\] {
