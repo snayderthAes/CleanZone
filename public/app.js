@@ -1,4 +1,4 @@
 function miBoton() {
-  alert(`HECHO POR SNAYDERTH CON 𖹭
-PRONTO DISPONIBLE.`);
+  alert(`PRONTO DISPONIBLE
+ATT: SNAYDERTH.`);
 }
