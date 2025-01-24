@@ -1,5 +1,5 @@
 function miBoton() {
-  alert(`PRONTO DISPONIBLE
+  alert(`No disponible temporalmente. ❤️
 ATT: SNAYDERTH.`);
 }
 
